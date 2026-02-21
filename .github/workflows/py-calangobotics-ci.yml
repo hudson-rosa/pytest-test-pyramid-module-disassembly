@@ -3,7 +3,7 @@ name: Calangobotics QA CI
 on:
   push:
   schedule:
-    - cron: "30 21 * * *"   # nightly at 19:00 UTC
+    - cron: "30 19 * * *"   # nightly at 19:30 UTC
 
 jobs:
   tests:
