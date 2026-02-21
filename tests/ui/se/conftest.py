@@ -7,7 +7,7 @@ from tests.ui.common.base_page import BasePage
 from tests.ui.se.pages.dashboard_page import DashboardPage
 
 pytest_plugins = [
-    "tests.ui.se.steps.ccalangobotics_dashboard_steps",
+    "tests.ui.se.steps.calangobotics_dashboard_steps",
 ]
 
 
