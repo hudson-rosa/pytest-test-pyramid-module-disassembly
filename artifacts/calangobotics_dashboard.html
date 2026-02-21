@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Battery Disassembly Dashboard</title>
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="dashboard.css">
+
+  <script>
+    function showModuleStatus() {
+      const statusLabel = document.getElementById("module-status");
+      statusLabel.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <div class="header">
+      <img src="artifacts/qalango-logo-transp.png" alt="Qalango logo">
+      <h1>Battery Disassembly Dashboard</h1>
+    </div>
+
+    <!-- System Status -->
+    <div class="system-status">
+      <p id="system-status">The system is operational</p>
+    </div>
+
+    <!-- Module Status -->
+    <div class="module-section">
+      <label for="module-number">Module number</label>
+      <input type="text" id="module-number" name="module-number">
+
+      <button id="check-status-button" onclick="showModuleStatus()">Check Status</button>
+
+      <p id="module-status">MODULE PROCESSED</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

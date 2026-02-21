@@ -1,0 +1,124 @@
+:root {
+  --bg-dark: #0e1116;
+  --panel-dark: #161b22;
+  --text-primary: #e6edf3;
+  --text-secondary: #9ba3af;
+  --accent-start: #5eead4;
+  --accent-end: #14f1c4;
+  --accent-solid: #1dd3b0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0f172a, var(--bg-dark));
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  background: var(--panel-dark);
+  border-radius: 16px;
+  padding: 32px 40px;
+  width: 420px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.header img {
+  width: 64px;
+  height: auto;
+}
+
+.header h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.system-status {
+  background: linear-gradient(
+    135deg,
+    rgba(94, 234, 212, 0.15),
+    rgba(20, 241, 196, 0.05)
+  );
+  border: 1px solid rgba(29, 211, 176, 0.4);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 28px;
+}
+
+.system-status p {
+  margin: 0;
+  color: var(--accent-solid);
+  font-weight: 500;
+}
+
+.module-section label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.module-section input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2a2f3a;
+  background: #0b0f14;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  outline: none;
+}
+
+.module-section input:focus {
+  border-color: var(--accent-solid);
+}
+
+.module-section button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(
+    135deg,
+    var(--accent-start),
+    var(--accent-end)
+  );
+  color: #022c22;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.module-section button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(20, 241, 196, 0.35);
+}
+
+#module-status {
+  display: none;
+  margin-top: 16px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(29, 211, 176, 0.15);
+  color: var(--accent-solid);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}

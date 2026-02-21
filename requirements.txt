@@ -1,0 +1,5 @@
+pytest
+pytest_bdd
+playwright
+selenium
+webdriver-manager
