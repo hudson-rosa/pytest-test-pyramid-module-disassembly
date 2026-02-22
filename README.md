@@ -1,4 +1,5 @@
 # PYTEST: TEST PYRAMID - Battery Module Disassembly Case
+author: Hudson S. S. Rosa
 
 ## 1 - To prepare the environment for a local check, simply run the `python3 install_local_env.py` file
 
