@@ -9,7 +9,6 @@ def run_updates():
 
     print("\nUpdating PIP...")
     
-    os.system(f"deactivate")
     os.system(f"rm -rf .venv venv")
     os.system(f"python{_v3} -m venv venv")
     os.system(f"source venv/bin/activate")
@@ -18,6 +17,7 @@ def run_updates():
     os.system(f"pip install -r requirements.txt")
     os.system(f"pip install playwright")
     os.system(f"playwright install --with-deps")
+    os.system(f"pip install --upgrade pip")
 
     print("\nPackages installed:")
     os.system(f"which python")

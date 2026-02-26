@@ -6,7 +6,7 @@ Feature: Dashboard UI Smoke Test
   @ui @smoke
   Scenario: Dashboard loads successfully
     Given the operator is on the dashboard page
-    Then the page title should "Battery Disassembly Dashboard"
+    Then the page title should "Battery Lifecycle Dashboard"
     And the system status indicator shows "The system is operational"
 
   @ui @module-status
