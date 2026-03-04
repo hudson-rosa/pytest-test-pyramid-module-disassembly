@@ -82,7 +82,8 @@ By passing the BDD tag from an identified scenario:
 ## 6 - ALL LAYERS: Use simply this command:
 
 ```bash
-    pytest tests/unit tests/integration tests/e2e tests/ui/se tests/ui/pw -v --log-cli-level=INFO
+    pytest tests/unit tests/integration tests/e2e tests/ui/pw -v --log-cli-level=INFO
+    pytest tests/unit tests/integration tests/e2e tests/ui/se -v --log-cli-level=INFO
 ```
 
 ## 7 - CI files are tested locally using ACT (open-source tool: 'brew install act')
