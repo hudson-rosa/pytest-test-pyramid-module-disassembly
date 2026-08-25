@@ -9,8 +9,8 @@ def given_the_system_is_ready(plc_connection):
     return SystemController(plc_connection)
 
 
-@when("a cycle is started")
-def when_a_cycle_is_started(system):
+@when("a disassembly cycle is started")
+def when_a_disassembly_cycle_is_started(system):
     system.start_system()
 
 
